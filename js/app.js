@@ -28,62 +28,104 @@ var cookie1 = {
 
 };
 
-console.log(cookie1.random(cookie1.max));
+console.log(cookie1.randNum());
 
 
-// //Stores the min/max hourly customers, and the average cookies per customer, in object properties for Tokyo.
-// var cookie2 = {
-//   name: 'Tokyo',
-//   min: 3,
-//   max: 24,
-//   avg: 3.7,
+//Stores the min/max hourly customers, and the average cookies per customer, in object properties for Tokyo.
+var cookie2 = {
+  name: 'Tokyo',
+  min: 3,
+  max: 24,
+  avg: 3.7,
 
-//   randNum: function(){
-//     //return this.min + this.max;
-//     return Math.floor(Math.random() * Math.floor(this.max) * this.avg);
-//   }
+  randNum: function(){
+    var newArray = [];
+    var totalOfCookies = 0;
 
-// };
-// console.log(cookie2.randNum(cookie2.max));
+    for(var i = 0; i < hours.length; i++){
 
-// //Stores the min/max hourly customers, and the average cookies per customer, in object properties for Dubai.
-// var cookie3 = {
-//   name: 'Dubai',
-//   min: 11,
-//   max: 38,
-//   avg: 3.7,
+      var random =  Math.floor(Math.random() * Math.floor(this.max) * this.avg);
+      totalOfCookies = totalOfCookies + random;
+      newArray.push(`${hours[i]} ${random} cookies`);
 
-//   randNum: function(){
-//     //return this.min + this.max;
-//     return Math.floor(Math.random() * Math.floor(this.max));
-//   }
-// };
-// console.log(cookie3.randNum(cookie3.max));
+    }
+    newArray.push(`Total: ${totalOfCookies} cookies`);
+    return newArray;
+  }
 
-// //Stores the min/max hourly customers, and the average cookies per customer, in object properties for Paris
-// var cookie4 = {
-//   name: 'Paris',
-//   min: 20,
-//   max: 38,
-//   avg: 2.3,
+};
+console.log(cookie2.randNum());
 
-//   randNum: function(){
-//     //return this.min + this.max;
-//     return Math.floor(Math.random() * Math.floor(this.max));
-//   }
+//Stores the min/max hourly customers, and the average cookies per customer, in object properties for Dubai.
+var cookie3 = {
+  name: 'Dubai',
+  min: 11,
+  max: 38,
+  avg: 3.7,
 
-// };
-// console.log(cookie4.randNum(cookie4.max));
-// //Stores the min/max hourly customers, and the average cookies per customer, in object properties for Lima.
-// var cookie5 = {
-//   name: 'Lima',
-//   min: 2,
-//   max: 16,
-//   avg: 4.6,
+  randNum: function(){
+    var newArray = [];
+    var totalOfCookies = 0;
 
-//   randNum: function(){
-//     //return this.min + this.max;
-//     return Math.floor(Math.random() * Math.floor(this.max));
-//   }
-// };
-// console.log(cookie5.randNum(cookie5.max));
+    for(var i = 0; i < hours.length; i++){
+
+      var random =  Math.floor(Math.random() * Math.floor(this.max) * this.avg);
+      totalOfCookies = totalOfCookies + random;
+      newArray.push(`${hours[i]} ${random} cookies`);
+
+    }
+    newArray.push(`Total: ${totalOfCookies} cookies`);
+    return newArray;
+  }
+
+};
+console.log(cookie3.randNum());
+
+//Stores the min/max hourly customers, and the average cookies per customer, in object properties for Paris
+var cookie4 = {
+  name: 'Paris',
+  min: 20,
+  max: 38,
+  avg: 2.3,
+
+  randNum: function(){
+    var newArray = [];
+    var totalOfCookies = 0;
+
+    for(var i = 0; i < hours.length; i++){
+
+      var random =  Math.floor(Math.random() * Math.floor(this.max) * this.avg);
+      totalOfCookies = totalOfCookies + random;
+      newArray.push(`${hours[i]} ${random} cookies`);
+
+    }
+    newArray.push(`Total: ${totalOfCookies} cookies`);
+    return newArray;
+  }
+
+};
+console.log(cookie4.randNum());
+//Stores the min/max hourly customers, and the average cookies per customer, in object properties for Lima.
+var cookie5 = {
+  name: 'Lima',
+  min: 2,
+  max: 16,
+  avg: 4.6,
+
+  randNum: function(){
+    var newArray = [];
+    var totalOfCookies = 0;
+
+    for(var i = 0; i < hours.length; i++){
+
+      var random =  Math.floor(Math.random() * Math.floor(this.max) * this.avg);
+      totalOfCookies = totalOfCookies + random;
+      newArray.push(`${hours[i]} ${random} cookies`);
+
+    }
+    newArray.push(`Total: ${totalOfCookies} cookies`);
+    return newArray;
+  }
+
+};
+console.log(cookie5.randNum());
