@@ -1,35 +1,34 @@
 'use strict';
 
 
+var hours = ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:', '8pm:'];
 
 //Stores the min/max hourly customers, and the average cookies per customer, in object properties for Seattle.
 
 var cookie1 = {
   name: 'Seattle',
-  min: 23, //
+  min: 23,
   max: 65,
   avg: 6.3,
 
   randNum: function(){
-    //return this.min + this.max;
-    return Math.floor(Math.random() * Math.floor(this.max));
+    var newArray = [];
+    var totalOfCookies = 0;
 
- 
+    for(var i = 0; i < hours.length; i++){
 
-    // function calculate(array) {
-    //   var sum = 0;
-    //   for (var i = 0; i < array.length; i++) {
-    //     sum = sum + array[i];
-    //   }
-    //   return sum;
-    // }
-    // document.write(calculate([23, 65,]));
+      var random =  Math.floor(Math.random() * Math.floor(this.max) * this.avg);
+      totalOfCookies = totalOfCookies + random;
+      newArray.push(`${hours[i]} ${random} cookies`);
 
+    }
+    newArray.push(`Total: ${totalOfCookies} cookies`);
+    return newArray;
   }
 
 };
-console.log(cookie1.randNum(cookie1.max));
-// console.log(cookie1.(cookie1.avg));
+
+console.log(cookie1.random(cookie1.max));
 
 
 // //Stores the min/max hourly customers, and the average cookies per customer, in object properties for Tokyo.
@@ -41,7 +40,7 @@ console.log(cookie1.randNum(cookie1.max));
 
 //   randNum: function(){
 //     //return this.min + this.max;
-//     return Math.floor(Math.random() * Math.floor(this.max));
+//     return Math.floor(Math.random() * Math.floor(this.max) * this.avg);
 //   }
 
 // };
