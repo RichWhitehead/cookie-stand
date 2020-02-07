@@ -2,7 +2,7 @@
 
 // Array of business hours.
 
-var hoursOfOperation = ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:', '8pm:'];
+var hoursOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 //// Variable storing array of location objects + variable for table.
 
@@ -37,15 +37,15 @@ CookieStore.prototype.cookiesEachHour = function(){
 
 CookieStore.prototype.render = function(){
   var parentEl = document.getElementById('sales');
-  var liEl = document.createElement('li');
+  var liEl = document.createElement('td');
   liEl.textContent = this.location;
   parentEl.appendChild(liEl);
   for(var i = 0; i < hoursOfOperation.length; i++){
-    liEl = document.createElement('li');
+    liEl = document.createElement('td');
     liEl.textContent = hoursOfOperation[i] + ': ' + this.dailyCookieSales[i] + ' cookies';
     parentEl.appendChild(liEl);
   }
-  liEl = document.createElement('li');
+  liEl = document.createElement('tr');
   liEl.textContent = 'Total: ' + this.totalCookies;
   parentEl.appendChild(liEl);
 };
