@@ -1,3 +1,7 @@
+header {
+  background-color: salmon;
+}
+
 td,
 th{
   border: 1px solid black;
@@ -10,10 +14,24 @@ th{
 }
 
 #image{
-  margin-left: 50%;
+  /* margin-left: 50%; */
   /* margin-right: 50% */
-  position: relative;
+  /* position: relative; */
  
+}
+
+#image1 {
+  margin-left: 50%;
+  border: 1px solid black;
+}
+
+body {
+  background-color: purple;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #eeee33;
 }
 
 /* #tr :nth-child(even){
