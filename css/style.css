@@ -2,26 +2,50 @@ header {
   background-color: salmon;
 }
 
-td,
-th{
+td,th,tr{
   border: 1px solid black;
   padding: 10px;
 }
 
 
-#td{
+/* #td{
   text-align: center;
-}
-
+} */
+/* Images added */
 #image{
-  /* margin-left: 50%; */
-  /* margin-right: 50% */
-  /* position: relative; */
- 
+  size: 10%;
+  margin-right: 2%;
+  border: 1px solid black;
+
+  } 
+
+#image1{
+  margin-right: 50%;
+  border: 1px solid black;
 }
 
-#image1 {
-  margin-left: 50%;
+#image2{
+  margin-top: 5%;
+  border: 1px solid black;
+}
+
+#image3{
+  margin-top: 5%;
+  border: 1px solid black;
+}
+
+#image4{
+  margin-top: 5%;
+  border: 1px solid black;
+}
+
+#image5{
+  margin-top: 5%;
+  border: 1px solid black;
+}
+
+#image6{
+  margin-top: 5%;
   border: 1px solid black;
 }
 
@@ -72,5 +96,3 @@ th[scope="row"]{
   position: relative;
  
 }
-
-#image1
