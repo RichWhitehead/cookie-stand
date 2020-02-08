@@ -1,26 +1,30 @@
+h1{
+  font-size: 200%;
+}
+
 header {
   background-color: salmon;
+  display: inline-block;
+
 }
 
 td,th,tr{
-  border: 1px solid black;
+  border: 10px solid black;
   padding: 10px;
 }
 
-
-/* #td{
-  text-align: center;
-} */
 /* Images added */
+
 #image{
-  size: 10%;
-  margin-right: 2%;
+  margin-right: 50%;
+  float: left;
   border: 1px solid black;
 
   } 
 
 #image1{
-  margin-right: 50%;
+  margin-left: 75%;
+  block-size: 10%;
   border: 1px solid black;
 }
 
@@ -58,6 +62,7 @@ h1 {
   color: #eeee33;
 }
 
+
 /* #tr :nth-child(even){
   background-color: salmon; */
 
@@ -90,9 +95,3 @@ th[scope="row"]{
 /* #section{
   margin-top: auto;
 } */
-
-#image{
-  margin-left: 50%;
-  position: relative;
- 
-}

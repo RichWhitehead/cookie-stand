@@ -2,7 +2,7 @@
 
 // Array of business hours.
 
-var hoursOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+var hoursOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 //// Variable storing array of location objects + variable for table.
 
@@ -37,7 +37,7 @@ CookieStore.prototype.cookiesEachHour = function(){
 
 CookieStore.prototype.render = function(){
   var parentEl = document.getElementById('sales');
-  var liEl = document.createElement('td');
+  var liEl = document.createElement('tr');
   liEl.textContent = this.location;
   parentEl.appendChild(liEl);
   for(var i = 0; i < hoursOfOperation.length; i++){
@@ -45,10 +45,11 @@ CookieStore.prototype.render = function(){
     liEl.textContent = hoursOfOperation[i] + ': ' + this.dailyCookieSales[i] + ' cookies';
     parentEl.appendChild(liEl);
   }
-  liEl = document.createElement('tr');
+  liEl = document.createElement('td');
   liEl.textContent = 'Total: ' + this.totalCookies;
   parentEl.appendChild(liEl);
 };
+
 
 
 // console.log(seattle.calculateCustomer());
@@ -138,7 +139,7 @@ cookieStores[4].render();
 //   location: 'Seattle',
 //   minCustomers: 23,
 //   maxCustomers: 65,
-//   avgCookies: 6.3, 
+//   avgCookies: 6.3,
 //   totalCookies: 0,
 //   dailyCookieSales: [],
 //   calculateCustomer: function(){
