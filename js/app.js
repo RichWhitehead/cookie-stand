@@ -83,26 +83,53 @@ cookieStores[4].render();
 
 // var allTotal = 0;
 
-
 var foot = document.getElementById('sales');
 var feetRow = document.createElement('tr');
 var footTD = document.createElement('td');
 footTD.textContent = 'total';
 feetRow.appendChild(footTD);
 foot.appendChild(feetRow);
-
 for(var i = 0; i < hoursOfOperation.length; i++){
   var hourlyTotal = 0;
   for(var j = 0; j < cookieStores.length; j++){
     hourlyTotal += cookieStores[j].dailyCookieSales[i];
-
-
   }
+  renderFooter(hourlyTotal);
   console.log(hourlyTotal);
 }
+// Notice we have dailyTotals as an argument for this function
+function renderFooter(dailyTotals) {
+  // create the element
+  // add the content to your element
+  // append the element to your child
+  // Using what you have above your loop
+  // you already have your parent element from: var foot = document.getElementById('sales');
+  // you also have the table row deflined and in the footer you only have 1 row so we will use: var feetRow = document.createElement('tr'); from above
+  var footTD = document.createElement('td');
+  footTD.textContent = dailyTotals;
+  foot.appendChild(footTD);
+}
+
+
+// var foot = document.getElementById('sales');
+// var feetRow = document.createElement('tr');
+// var footTD = document.createElement('td');
+// footTD.textContent = 'total';
+// feetRow.appendChild(footTD);
+// foot.appendChild(feetRow);
+
+// for(var i = 0; i < hoursOfOperation.length; i++){
+//   var hourlyTotal = 0;
+//   for(var j = 0; j < cookieStores.length; j++){
+//     hourlyTotal += cookieStores[j].dailyCookieSales[i];
+
+
+//   }
+//   console.log(hourlyTotal);
+// }
 // allTotal+=hourlyTotal;
 // var toes = document.createElement('td');
-// toes.textContent=hourlyTotal;]\// feet.appendChild(foot);
+// toes.textContent=hourlyTotal];// feet.appendChild(foot);
 
 // var pinky = document.createElement('td');
 // pinky.textContent = allTotal;
