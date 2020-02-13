@@ -1,6 +1,6 @@
 body {
 
-  background-color: purple;
+  background-color: salmon;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,7 +8,14 @@ h1{
   font-size: 200%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  color: salmon
+  color: salmon;
+}
+
+h2{
+  font-size: 200%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: salmon;
 }
 
 li{
@@ -18,7 +25,7 @@ li{
 
 header {
 
-  background-color: purple;
+  background-color: black;
   margin: 0%;
   padding: 0;
   display: inline-block;
@@ -71,12 +78,18 @@ td,th,tr{
 }
 
 #image6{
-  margin-top: 5%;
+  margin-top: 50%;
+  margin-left: 80%;
   border: 1px solid black;
 }
 
 section{
+  color: white;
   text-align: center;
   letter-spacing: 1px;
   line-height: 2;
 }
+
+/* #sales1{
+  size: 100%;
+} */

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
+  <html>
+
+    <head>
+
           <title>Sales</title>
+
           <link rel="stylesheet" href="css/reset.css" type="text/css">
+
           <link rel="stylesheet" href="css/style.css" type="text/css">
             
-              
-      </head>
+        </head>
   
-      <header>Sales</header>
+    
       <body>
       
           <h1></h1>
@@ -21,13 +24,17 @@
             
           
           <!-- Added links to sales.html -->
-<nav>
-        <table id="sales">
-          <li><a href="sales.html">Sales</a></li>
-          <!-- <li><a href="locations.html">Locations</a></li>
-          <li><a href="menu.html">Menu</a></lil>
-          <li><a href="shop.html">Shop</a></lil>
-          <li><a href="history.html">History</a></lil> -->
+          <ol> 
+
+            <nav>
+              <table id="sales">
+                <li><a href="sales.html">Sales</a></li>
+                <class id="sales1"src="sales.html"></class>
+                <!-- <li><a href="locations.html">Locations</a></li>
+                  <li><a href="menu.html">Menu</a></lil>
+                    <li><a href="shop.html">Shop</a></lil>
+                      <li><a href="history.html">History</a></lil> -->
+                      </ol>
 
         </ul>
       </nav>
@@ -39,22 +46,36 @@
    
     <script src="js/app.js" type="text/javascript"></script>
 </body>
+
+<table id='gotit'>
+  <tfoot id="foot"></tfoot>
+</table>
+
 <form id="user-form">
-  <fieldset>
-    <label> Store Location:</label>
-    <input id="elementName" type="text" placeholder="Location">
-    <label> Min Customers:</label>
-    <input id="elementName" type="text" placeholder="Number of Min Customers">
-    <label> Max Customers:</label>
-    <input id="elementName" type="text" placeholder="Number of Max Customers">
-    <label> Avg Cookie Sales:</label>
-    <input id="elementName" type="text" placeholder="Avg Cookie Sales">
-    <button value="submit">Submit </button>
-  </fieldset>
 
-<footer>
+    <fieldset>
+        <label style="color: black;"> Store Location:</label>
 
-  
-  
-</footer>
+        <input id="storeName" type="text" placeholder="Enter Store Name">
+
+        <label style="color: black;">Minimum Cookies Sold Per Hour:</label>
+
+        <input id="minimumCookies" type="text" placeholder="Enter Minimum Cookies">
+
+       <label style="color:black;">Maximum Cookies Sold Per Hour:</label>
+
+       <input id="maximumCookies" type="text" placeholder="Enter Maximum Cookies">
+
+       <label style="color: black;">Average Cookies Sold:</label>
+
+      <input id="avgCookies" type="text" placeholder="Enter Average Cookies">
+
+      <label style="color:black;">Sold Cookies Per Hour</label>
+
+      <input id="soldCookies" type="text" placeholder="Enter Sold Cookies Per Hour">
+
+      <button value="submit">submit</button>
+
+      </fieldset>
+</form>
 </html>
