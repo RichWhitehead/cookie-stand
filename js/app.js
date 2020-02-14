@@ -111,28 +111,7 @@ function renderFooter(dailyTotals) {
 }
 
 
-// var foot = document.getElementById('sales');
-// var feetRow = document.createElement('tr');
-// var footTD = document.createElement('td');
-// footTD.textContent = 'total';
-// feetRow.appendChild(footTD);
-// foot.appendChild(feetRow);
-
-// for(var i = 0; i < hoursOfOperation.length; i++){
-//   var hourlyTotal = 0;
-//   for(var j = 0; j < cookieStores.length; j++){
-//     hourlyTotal += cookieStores[j].dailyCookieSales[i];
 
 
-//   }
-//   console.log(hourlyTotal);
-// }
-// allTotal+=hourlyTotal;
-// var toes = document.createElement('td');
-// toes.textContent=hourlyTotal];// feet.appendChild(foot);
-
-// var pinky = document.createElement('td');
-// pinky.textContent = allTotal;
-// foot.appendChild(pinky);
 
 

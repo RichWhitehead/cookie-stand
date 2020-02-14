@@ -1,6 +1,117 @@
+  
 body {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+  background-color: darksalmon;
+  font-size: 16px;
+}
+#family{
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+  
+}
 
-  background-color: salmon;
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+h2 {
+  font-family: Times New Roman;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: white;  
+}
+
+h3 {
+  font-family: 'Times New Roman';
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  color: white;
+
+}
+
+td, th {
+  padding: 5px;
+}
+
+tr, td, th {
+  border: solid black 2px;
+}
+
+aside {
+  float: right;
+  margin-right: 15px;
+  padding: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 10px 40px 10px 40px;
+  border-left: 1px solid grey
+}
+
+#aboutUsImg {
+  background-color: none;
+  border: none;
+  padding: none;
+  margin-right: none;
+}
+
+#aboutUs {
+  margin-top: 90px;
+}
+
+.hoursDiv {
+  margin-top: 35px;
+  margin-left: 15px;
+  width: 70%;
+  padding: 10px;
+  display: inline-block;
+} 
+
+.hoursDiv p {
+  margin-left: 30px;
+}
+
+.imgResize {
+  width: 200px;
+  border: ridge 3px black;
+} 
+
+/* body {
+  background-color:lightsalmon;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,24 +119,33 @@ h1{
   font-size: 200%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  color: salmon;
+  color:black;
+  
 }
 
 h2{
   font-size: 200%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  color: salmon;
+  color: blue;
+}
+
+h3{
+  font-size: 200%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: purple;
+  
+
 }
 
 li{
-  text-align: center;
+  text-align: left;
   
 }
 
 header {
-
-  background-color: black;
+  background-color:white;
   margin: 0%;
   padding: 0;
   display: inline-block;
@@ -40,36 +160,44 @@ td,th,tr{
 
 /* Images added */
 
-#image{
+/* #image{
   width: 25%;
   margin-right: 50%;
   float: left;
-  border: 1px solid black;
 
   } 
 
 #image1{
   width: 25%;
   height: 90%;
-  margin-left: 75%;
-  /* block-size: 100%; */
-  border: 1px solid black;
+  margin-left: 90%;
+  block-size: 100%;
+  
 }
 
+
 #image2{
-  margin-top: 5%;
-  border: 1px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  
 }
 
 #image3{
-  width: 40%;
-  margin-left: 30%;
-  border: 1px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
 }
 
 #image4{
-  margin-left: 80%;
-  border: 1px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+ 
 }
 
 #image5{
@@ -78,18 +206,17 @@ td,th,tr{
 }
 
 #image6{
-  margin-top: 50%;
-  margin-left: 80%;
-  border: 1px solid black;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
 section{
-  color: white;
+  color: black;
   text-align: center;
   letter-spacing: 1px;
   line-height: 2;
-}
+}  */
 
-/* #sales1{
-  size: 100%;
-} */
