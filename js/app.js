@@ -110,6 +110,52 @@ function renderFooter(dailyTotals) {
   foot.appendChild(footTD);
 }
 
+// Added form for table data
+
+foot();
+
+
+
+var userForm = document.getElementById('user-form');
+userForm.addEventListener('submit', formSubmit);
+
+
+function formSubmit(e){
+
+  e.preventDefault();
+
+  var location = e.target.cookieStores.value;
+  var minCustomers = e.target.minCustomers.value;
+  var maxCustomers= e.target.maxCustomers.value;
+  var avgSale = e.target.dailyCookieSales;
+  var [] = e.target.dailyCookieSales.value;
+
+  e.target.CookieStore.value = null;
+  e.target.minCustomers.value = parseInt(e.target.minCustomers.values);
+  e.target.maxCustomers.value = parseInt(e.target.maxCustomers.values);
+  e.target.avgSale.value = parseInt(e.target.avgSale.values);
+  e.targer.totalCookies.value = parseInt(e.target.dailyCookieSales.value);
+
+  new CookieStore(location, minCustomers, maxCustomers, avgSale, [], 0);
+
+  console.log(new CookieStore(location, minCustomers, maxCustomers, avgSale, [], 0));
+
+  e.target.minCustomers.value = null;
+  e.target.maxCustomers.value = null;
+  e.target.avgSale.value = null;
+  e.target.dailyCookieSales.value = null;
+
+
+  for(var form = location.length - 1; form > location.length - 2; form --) {
+    location[form].cookiesEachHour();
+    location[form].renderData();
+
+  }
+
+
+
+}
+
 
 
 
